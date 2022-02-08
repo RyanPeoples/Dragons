@@ -1,4 +1,4 @@
-const { Dragon } = require('./dragon');
+const Dragon = require('./dragon');
 
 class FriendlyDragon extends Dragon {
     constructor(name, color, lifeGoals, friend) {
@@ -23,6 +23,4 @@ class FriendlyDragon extends Dragon {
     }
 }
 
-module.exports = {
-    FriendlyDragon,
-};
+module.exports = FriendlyDragon;

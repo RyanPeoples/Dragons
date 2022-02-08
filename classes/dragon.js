@@ -3,6 +3,18 @@ class Dragon {
     this.name = name;
     this.color = color;
   }
+  breathesFire(){
+    return `${this.name} breathes fire everywhere! BURN!!!!`
+  }
+
+  static getDragons(...instances){
+    let arr = [];
+    for(let i = 0;i<instances.length;i++){
+      let name = instances[i].name;
+      arr.push(name);
+    }
+    return arr;
+  }
 }
 
 /****************************************************************************/
